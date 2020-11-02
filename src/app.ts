@@ -9,25 +9,25 @@ app.use(cors({origin: true}));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: false}));
 
-app.get('/index', (req,res) => {
+app.get('/app/index', (req,res) => {
     console.log ("req: ", req);
     res.send("Method GET jalan!");
     return res.status(200).json({message:"success!"});
 })
 
-app.post('/create', (req,res) => {
+app.post('/app/create', (req,res) => {
     console.log ("req: ", req);
     res.send("Method POST jalan!");
     return res.status(200).json({message:"success!"});
 })
 
-app.delete('/remove', (req,res) => {
+app.delete('/app/remove', (req,res) => {
     console.log ("req: ", req);
     res.send("Method DELETE jalan!");
     return res.status(200).json({message:"success!"});
 })
 
-app.put('/update', (req,res) => {
+app.put('/app/update', (req,res) => {
     console.log ("req: ", req);
     res.send("Method PUT jalan!");
     return res.status(200).json({message:"success!"});
