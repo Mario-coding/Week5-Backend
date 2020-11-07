@@ -2,9 +2,11 @@ import express from 'express';
 import bodyParser from "body-parser";
 import cors from 'cors';
 import http from 'http';
-import config from "../environment";
+import config from "./environment";
+import routes from './routes';
 
 const app = express();
+
 app.use(cors({origin: true}));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: false}));
