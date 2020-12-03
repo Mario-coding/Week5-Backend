@@ -11,8 +11,8 @@ import {
 let userRouter = express.Router();
 
 userRouter.get('/', middleware.isAuthenticated, index);
-userRouter.delete('/', middleware.isAuthenticated, remove);
-userRouter.put('/', middleware.isAuthenticated, update);
+userRouter.delete('/:id', middleware.isAuthenticated, remove);
+userRouter.put('/:id', middleware.isAuthenticated, update);
 userRouter.post('/register', middleware.isAuthenticated, register);
 userRouter.post('/signin', middleware.isAuthenticated, signin);
 

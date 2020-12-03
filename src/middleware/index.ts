@@ -1,5 +1,4 @@
 import { Request, Response, NextFunction } from 'express';
-import { read } from 'fs';
 import jwt from 'jsonwebtoken';
 import config from '../environment';
 
