@@ -2,7 +2,6 @@ import User from '../src/api/user/user.model';
 import chai from 'chai';
 import chaiHttp from 'chai-http';
 import server from '../src/app';
-import { NOTIMP } from 'dns';
 
 const should = chai.should();
 const BASE_API = '/api/users';
